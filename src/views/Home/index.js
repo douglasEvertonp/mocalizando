@@ -1,13 +1,24 @@
 import React from 'react'
+import {ContainerHome, ContentHome} from './style'
 
+//components
+import Header from '../../components/Header'
+import CardCategories from '../../components/CardCategories'
+import Footer from '../../components/Footer'
 
 function Home(){
     return(
-        <ContainerHome>
-            <CotentHome>
-                <h1>hello Word</h1>
-            </CotentHome>
-        </ContainerHome>
+        <div>
+            <Header/>
+            <ContainerHome>
+                <ContentHome>
+                    <h1>Categorias</h1>
+                    <CardCategories/>
+                </ContentHome>
+            </ContainerHome>
+            <Footer />
+        </div>
+       
     )
 }
 
